@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+   <link rel="stylesheet" href="output.css">
+   <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <div id="website" class="bg-#73B0FB" >
+        <h1 class=" text-3xl">Weather forecast </h1>
+        <input type="text"   class="bg-white text-black p-30" id="city" placeholder="Enter the place">
+        <div id="dropdown" class="m-10">
+            <label for="city-select" class="dropdown-label">Choose a city:</label>
+            <select id="city-select" class="dropdown-select"></select>
+        </div>
+        <br>
+        <button id="search-button" class="p-12 bg-green-400  text-black rounded-lg">Search</button>
+        <button id="current-location" class="p-12 bg-blue-400 text-white rounded-lg">Current location</button>
+        <select class="bg-white text-black px-10" id="convertor">
+            <option>C</option>
+            <option>F</option>
+        </select>     
+   </div>
+      <div id="error-message" class="error-message"> 
+        
+
+      </div>
+        <div class="display">
+
+        <div class="weathericon">
+
+        </div>
+        <div class="temperature">
+
+       </div>
+       <div class="feelslike">
+
+       </div>
+       <div class="date">
+
+       </div>
+       <div class="city">
+
+       </div>
+       <div class="time">  
+     </div>
+
+    </div>
+   <div class="weather-output">
+        <div class="highlight">
+             <div class="humidity">
+                
+            </div>
+            <div class="windspeed">  
+               
+            </div>
+            <div class="cloud"> 
+               
+            </div> 
+        </div> 
+   </div>
+    <div class="extended">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+    </div>
+      <script src="script.js"></script>
+</body>
+</html>

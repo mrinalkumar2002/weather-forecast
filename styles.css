@@ -1,0 +1,137 @@
+ @import "tailwindcss";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eef6fc;
+    padding: 20px;
+}
+/* CONTAINER */
+#website {
+    background-color: #73b0fb;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+#website h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+button{
+  padding:10px ;
+}
+
+/*website display */
+.display {
+    background-color: #dbeafe;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    display: flex;
+     flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.dropdown-select {
+    width: 200px;
+    padding: 10px;
+     background-color: white; 
+     color: black;
+}
+/* output= */
+.weather-output {
+    background-color: #e0e7ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.highlight {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+/*extended*/
+.extended {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+.extended>div:not(#week) {
+    display: inline-block;
+    width: 35%;
+    margin: 2%;
+    background-color: white;
+    border-radius: 8px;   
+}
+.extended img {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+}
+
+/*  Responsive site */
+@media (max-width: 768px) {
+    input,
+    select,
+    button {
+        width: 100%;
+        max-width: 100%;
+        margin: 8px 0;
+    }
+    .highlight {
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlight div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    #website h1 {
+        font-size: 1.5rem;
+    }
+    .week {
+        font-size: 1.2rem;
+    }
+    button {
+        font-size: 0.9rem;
+    }
+}
+#error-messgae{
+    display: none;
+    padding: 10px;
+    margin:10px;
+    text-align: center;
+    max-width: 400px;
+    background-color:#f38275 ;
+    color: #000;
+}
+#error-message.show {
+    display: block;
+}
